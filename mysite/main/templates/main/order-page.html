@@ -1,0 +1,18 @@
+{% extends "main\base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="../../static/css/order.css">
+    <div class="order-div">
+        <p class="order-title-quote">Оформление заказа</p>
+        <p class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77e9644752836a7a64b5db2cbd0e96d7b8d98aea94a774a3a5f383714318c060&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+        </p>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.fuel }}
+            {{ form.street }}
+            {{ form.building }}
+            <a type="submit" class="btn success-order-btn mx-auto" href="/order/complete">Заказать</a>
+        </form>
+    </div>
+{% endblock %}

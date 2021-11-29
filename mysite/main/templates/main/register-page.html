@@ -1,0 +1,17 @@
+{% extends "main\base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="../../static/css/register.css">
+    <p class="register-title-quote">Регистрация</p>
+    <div class="register-div">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.name }}
+            {{ form.surname }}
+            {{ form.phone_number }}
+            {{ form.email }}
+            {{ form.password }}
+            <a type="submit" class="btn register-btn" href="login">Подтвердить регистрацию</a>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+.register-title-quote {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000
+}
+
+.register-btn {
+    margin-top: 15px;
+    position: absolute;
+    wight: 30%;
+    right: 35%;
+    left: 35%;
+    border: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.register-btn:hover {
+    color: #474a51;
+    background-color: #ffffff;
+}
+
+.register-surname {
+    margin-top: 15px
+}
+
+.register-phone {
+    margin-top: 15px;
+}
+
+.register-email {
+    margin-top: 15px;
+}
+
+.register-password {
+    margin-top: 15px;
+}
+
+.register-div {
+    wight: 100%
+}

@@ -1,0 +1,14 @@
+{% extends "main\base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="../../static/css/login.css">
+    <p class="login-title-quote">Авторизация</p>
+    <div class="login-div">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.email }}
+            {{ form.password }}
+            <a type="submit" class="btn auth-btn" href="/">Войти</a>
+        </form>
+    </div>
+{% endblock %}

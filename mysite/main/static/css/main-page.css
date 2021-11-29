@@ -1,0 +1,27 @@
+.main-title-quote {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000
+}
+
+.order-btn {
+    wight: 200px;
+    height: 100px;
+    border: 2px solid white;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.order-info {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column
+}
+
+.order-btn:hover {
+    color: #474a51;
+    background-color: #ffffff;
+}

@@ -1,0 +1,35 @@
+ .order-title-quote {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000
+}
+
+.success-order-btn {
+    margin-top: 15px;
+    position: absolute;
+    wight: 20%;
+    right: 40%;
+    left: 40%;
+    border: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.success-order-btn:hover {
+    color: #474a51;
+    background-color: #ffffff;
+}
+
+.order-div {
+    wight: 100%
+}
+
+.order-street {
+    margin-top: 15px;
+}
+
+.order-building {
+    margin-top: 15px
+}
