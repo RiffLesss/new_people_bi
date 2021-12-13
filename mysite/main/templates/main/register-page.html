@@ -6,12 +6,16 @@
     <div class="register-div">
         <form method="post">
             {% csrf_token %}
-            {{ form.name }}
-            {{ form.surname }}
-            {{ form.phone_number }}
+            {{ form.username }}
+            {{ form.first_name }}
+            {{ form.last_name }}
             {{ form.email }}
-            {{ form.password }}
-            <a type="submit" class="btn register-btn" href="login">Подтвердить регистрацию</a>
+            {{ form.password1 }}
+            {{ form.password2 }}
+            <button type="submit" class="btn register-btn">Подтвердить регистрацию</button>
         </form>
+        <div class="error-div">
+            <p class="form_errors">{{ form.errors }}</p>
+        </div>
     </div>
 {% endblock %}

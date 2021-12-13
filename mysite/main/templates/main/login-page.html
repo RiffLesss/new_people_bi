@@ -6,9 +6,9 @@
     <div class="login-div">
         <form method="post">
             {% csrf_token %}
-            {{ form.email }}
+            {{ form.username }}
             {{ form.password }}
-            <a type="submit" class="btn auth-btn" href="/">Войти</a>
+            <button type="submit" class="btn auth-btn">Войти</button>
         </form>
     </div>
 {% endblock %}

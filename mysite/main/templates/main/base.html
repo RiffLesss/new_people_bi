@@ -26,11 +26,11 @@
             <p class="nav-quote">Не теряй время, закажи заправку!</p>
             <div class="navbar-nav right-block">
                 <li>
-                    {% if current_user.is_authenticated %}
+                    {% if request.user.is_authenticated %}
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ current_user.name}} {{ current_user.surname}}
+                            {{ request.user.first_name}} {{ request.user.last_name}}
                         </a>
                     </div>
                     {% else %}

@@ -22,12 +22,12 @@
     background-color: #ffffff;
 }
 
-.register-surname {
+.register-last-name {
     margin-top: 15px
 }
 
-.register-phone {
-    margin-top: 15px;
+.register-first-name {
+    margin-top: 15px
 }
 
 .register-email {
@@ -38,6 +38,17 @@
     margin-top: 15px;
 }
 
+.register-password_repeat {
+    margin-top: 15px;
+}
+
 .register-div {
     wight: 100%
+}
+
+.form_errors {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000
 }

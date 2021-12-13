@@ -10,9 +10,10 @@
         <form method="post">
             {% csrf_token %}
             {{ form.fuel }}
+            {{ form.amount }}
             {{ form.street }}
             {{ form.building }}
-            <a type="submit" class="btn success-order-btn mx-auto" href="/order/complete">Заказать</a>
+            <button type="submit" class="btn success-order-btn mx-auto">Заказать</button>
         </form>
     </div>
 {% endblock %}

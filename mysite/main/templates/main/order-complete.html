@@ -1,0 +1,17 @@
+{% extends "main\base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="../../static/css/order-complete.css">
+    <div class="order-div">
+        <p class="order-complete-title-quote">Детали заказа</p>
+        <ul class="order-details">
+            <p class="customer-name detail">Заказчик: Привалов Степан</p>
+            <p class="address detail">Адрес: г. Нижний Новгород, ул. Львовска, 1В</p>
+            <p class="fuel detail">Топливо: Дизельное топливо</p>
+            <p class="amount detail">Объём: 20 литров</p>
+            <p class="price detail">Цена: 1022 ₽</p>
+            <p class="shipping-time detail">Приблизительное время доставки: 13.12.2021 12:34</p>
+            <p class="support-phone-number detail">Телефон поддержки: +7(831)888-88-88</p>
+        </ul>
+    </div>
+{% endblock %}
